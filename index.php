@@ -33,8 +33,14 @@ $games =[
         'puntiCasa'=>'1',
         'puntiOspite'=>'1'
     ]
-]
+];
 
+// creo ciclo for per stampare tutti i risultati con schema Olimpia Milano - Cantù | 55-60
+for($i=0; $i<count($games); $i++){   
+    echo('<p>');
+    echo($games[$i]['casa']).' - '.$games[$i]['ospite'].' | '.$games[$i]['puntiCasa'].' - '.$games[$i]['puntiOspite'];
+    echo('</p>');
+  }
 
 
 
