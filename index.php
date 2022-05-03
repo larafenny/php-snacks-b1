@@ -41,13 +41,11 @@ for($i=0; $i<count($games); $i++){
     echo($games[$i]['casa']).' - '.$games[$i]['ospite'].' | '.$games[$i]['puntiCasa'].' - '.$games[$i]['puntiOspite'];
     echo('</p>');
   }
-
-
-
 ?>
 
-<?php
 
+
+<?php
 /*
 Snack 2
 Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
@@ -58,10 +56,13 @@ $name = $_GET['name'];
 $email = $_GET['email'];
 $age = $_GET['age'];
 
-
-
-
-
+//faccio verifiche richieste
+if( strlen($name)>3 && strpos($mail, '.') && strpos($mail, '@') && is_numeric($age))
+  {
+    echo('<p>Accesso riuscito</p>');
+    } else {
+        echo('<p>Accesso negato</p>');
+        }
 ?>
 
 
