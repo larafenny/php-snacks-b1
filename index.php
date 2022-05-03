@@ -67,7 +67,6 @@ if( strlen($name)>3 && strpos($mail, '.') && strpos($mail, '@') && is_numeric($a
 
 
 <?php
-
 /*
 Snack 3
 Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta
@@ -76,15 +75,18 @@ Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà co
 //creo un array vuoto
 $array=[];
 
-
-
-
-
-
+//con un ciclo while riempio array finchè non ha 15 numeri casuali
+while(count($array) < 15){
+    //creo numero casuale da 0 a 100
+    $randomNumber = rand(0,100);
+    //inserisco num casuale dentro array
+    $array[] = $randomNumber; 
+}
 ?>
 
-<?php
 
+
+<?php
 /*
 Snack 4
 Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.*/
