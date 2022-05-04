@@ -105,7 +105,8 @@ L opera ebbe subito uno straordinario successo e contribuì in maniera determina
 
 La Commedia, pur proseguendo molti dei modi caratteristici della letteratura e dello stile medievali (ispirazione religiosa, scopo didascalico e morale, linguaggio e stile basati sulla percezione visiva e immediata delle cose), è profondamente innovativa poiché, come è stato rilevato in particolare negli studi di Erich Auerbach, tende a una rappresentazione ampia e drammatica della realtà, espressa anche con l uso di neologismi creati da Dante come «insusarsi», «inluiarsi» e «inleiarsi».[12]'
 
-
+//creo variabile che indica la fine del paragrafo, ovvero il punto
+$end='.';
 
 
 
